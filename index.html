@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Gym</title>
+    <link rel='StyleSheet' href='css/style.css'>
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('Capture.PNG');
+        /* CSS for Left */
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 17px;
+            top: 13px;
+            line-height: 0px;
+        }
+        /* CSS for Mid */
+        .mid{
+            display: block;
+            width: 49%;
+            margin: 12px auto;
+        }
+        /* CSS for right */
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 18px;
+        }
+        /* CSS for navigation bar */
+        .navbar{
+            list-style: none;
+            display: inline-block;
+        }
+        /* CSS for navigation bar list */
+        .navbar li{
+            display: inline-block;
+        }
+        /*CSS for navigation anchor  */
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            padding: 24px 6px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        /* CSS for navigation bar link hover */
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        /* CSS for logo */
+        .image{
+            border: 3px solid gray;
+            width: 150px;
+            margin-left: 20px;
+            border-radius: 27px;
+        }
+        /* CSS for gym name */
+        .left h4{
+            font-size: 18px;
+        }
+        /* CSS for button */
+        .btn{
+            margin: 0px 9px;
+            border: 2px solid black;
+            border-radius: 6px;
+            padding: 5px 15px;
+            cursor:pointer;
+            font-size: 15px;
+        }
+        /* CSS for button hover */
+        .btn:hover{
+            background-color: gray;
+        }
+        /* CSS for form */
+        .container{
+            border: 4px solid gray;
+            padding: 15px 25px;
+            margin: auto;
+            margin-top: 70px;
+            width: 28%;
+            border-radius: 8px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 209px;
+            padding: 6px;
+            border: 3px solid black;
+            margin: 3px auto;
+            border-radius: 15px;
+        }
+        .form-group select{
+            text-align: center;
+            display: block;
+            width: 209px;
+            padding: 6px;
+            border: 3px solid black;
+            margin: 3px auto;
+            border-radius: 15px;
+        }
+        .form-group button{
+            text-align: center;
+            display: block;
+            width: 209px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 3px auto;
+            border-radius: 15px;
+        }
+        .container button{
+            display: block;
+            background-color: rgb(243, 237, 237);
+            width: 80px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- For logo and name -->
+        <div class="left">
+            <img src="logo.jpg" class='image'>
+            <h4><u>MODERN GYM WORLD</u></h4>
+        </div>
+        <!-- for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class='active'><strong>Home</strong></a></li>
+                <li><a href="#"><strong>About Us</strong></a></li>
+                <li><a href="#"><strong>Contact Us</strong></a></li>
+                <li><a href="#"><strong>Equipments</strong></a></li>
+                <li><a href="#"><strong>Fitness Counter</strong></a></li>
+            </ul>
+        </div>
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1><strong><u>Register Yourself Immediately</u></strong></h1> 
+        <form action='nocation.php'>
+            <div class="form-group">
+                <input type="text" name="MyNme" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="date" name="MyDOB" placeholder="Choose Your D.O.B">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Choose Your Gender"></label>
+                    <select name='Gender' id='Gender'>
+                        <option value="none">Choose Your Gender</option>
+                        <option value="Single">Male</option>
+                        <option value='Married'>Female</option>
+                    </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="email" name="MyEmail" placeholder="Enter Your Email">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="Choose Your Status"></label>
+                    <select name='Status' id='Status'>
+                        <option value="Single">Choose Your Status</option>
+                        <option value="Single">Single</option>
+                        <option value='Married'>Married</option>
+                    </select>
+            </div>
+            <br>
+            <div class="form-group">
+                 <input type="text" name="MyUser" placeholder="Create Your UserName">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" name="MyPassword" placeholder="Create Your Password">
+            </div>
+            <br>
+            <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+  <div  
+</body>
+</html>
